@@ -5,8 +5,6 @@ def read_file(file_name: str) -> str:
     with open(file_name, 'r') as file:
         contents = file.read()
 
-        # print(contents)
-
         return contents
 
 def read_each_file_line(file_name: str) -> str:
@@ -29,8 +27,6 @@ def read_parsed_each_file_line(file_name: str) -> list:
 def read_json_file(file_name: str):
     with open(file_name, 'r') as file:
         parsed_data = json.load(file)
-
-        # print(parsed_data)
 
         return parsed_data
     
